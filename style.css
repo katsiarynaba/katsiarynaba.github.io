@@ -1,0 +1,146 @@
+@font-face {
+	font-family: 'PT-Mono';
+	src: url(PTM55FT.ttf) format('truetype');
+}
+
+* {
+  margin:  0;
+  padding: 0;
+}
+
+html, body { height: 100% }
+
+body {
+	margin-top:40px;
+  font-family: Helvetica,Arial, Georgia, Sans-serif;
+  max-width:1280px;
+  overflow-x: hidden;
+  color:#999999;
+  background-color: white;
+}
+
+a {
+  color:#c2cadc;	
+}
+
+img {
+	max-width:100%;
+}
+
+p {
+	color:#c2cadc;
+	font-family:'PT-Mono';
+	font-size:12px;
+	line-height:20px;
+}
+
+
+h1 {
+    color: blue;
+    font-family:'PT-Mono';
+    font-size:30px;
+
+}
+
+
+h2 {
+	color:blue;
+	font-family:'PT-Mono';
+	font-size:24px;
+}
+
+.title {
+	margin-left:40px;
+	font-size:16px;
+	font-family:'PT-Mono';
+	color:blue;
+}
+
+#menu {
+	position: fixed;
+	top: 0; left: 0;
+	width: 200px;
+	height: 100%;
+	margin-left:40px;
+	margin-top:60px;
+	font-family: 'PT-Mono';
+	font-size: 12px;
+	line-height: 24px;
+	background-color: none;
+    overflow-y: scroll;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	/*height: 3000px;*/
+	/*border: 1px dotted red;*/
+
+	}
+
+
+#menu > li > a,
+#menu > li > ul { 
+	margin-top: 32px;
+	line-height:30px;
+	font-size:13px;
+	font-color:#c2cadc;
+
+}
+#menu > li > ul { display: none }
+#menu > li > a { color: blue }
+#menu > li:first-child > a { color: blue }
+#menu > li:last-child > a { margin-top: 0 }
+#menu a { text-decoration: none; cursor: pointer; display: block; }
+#menu a:hover { text-decoration: underline }
+
+#menu .about {
+	margin-top:0;
+	line-height:16px;
+}
+
+
+
+#middle{
+	width: calc(100% - 260px);
+	height:100%;
+	float: right;
+	background-color: white;
+}
+
+
+.video {
+	max-width:100%;
+}
+
+.content {
+	max-width:100%;
+}
+
+.portfolio-item { 
+	margin-top:10px;
+	margin-right:40px;
+}
+
+.introduction {
+	margin-top:30px;
+	width:30%;
+	float:left;
+}
+
+.introduction p {
+	color:blue;
+}
+
+.description {
+	margin-top:30px;
+	margin-bottom:60px;
+	margin-left:3%;
+	width:67%;
+	float:left;
+}
+
+.half {
+	width:45%;
+	margin-right:5%;
+	float:left;
+}
+
