@@ -506,12 +506,22 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 	font-size:12px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+	.about-container {
+		width:100%;
+	}
 	.about-title {
 		width:100%;
+		margin-left:5%;
 	}
 	.about-description {
 		width:100%;
+		margin-left:5%
+	}
+
+	.img-about {
+		min-width:100%;
+		max-width:100%;
 	}
 
 }
