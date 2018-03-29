@@ -495,12 +495,15 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 	padding-right:5%;
 }
 
-
+.face{
+	width:100%;
+}
 
 .back-link {
 	position: fixed;
 	bottom: 1em;
-	right: 40px;
+	right:3%;
+	font-size:12px;
 }
 
 @media (max-width: 480px) {
