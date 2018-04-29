@@ -266,8 +266,41 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 
 .card {
   width: 100%;
+  margin-bottom:2em;
   position: relative;
   display: inline-block;
+}
+
+.card:before,
+.card:after {
+	position: absolute;
+	z-index: 100;
+	display: block;
+	border-radius:5px;
+	top: -20px;
+	color:blue;
+	text-shadow: 0px 2px 15px rgba(255,255,255,0.3);
+}
+
+.card:before {
+	left: 0	px;
+	content: '‹';
+}
+
+.card:after {
+	left: 30px;
+	content:'›';
+	opacity:0.5;
+}
+
+.card:hover:before {
+	color:blue;
+	opacity:0.5;
+}
+.card:hover:after {
+	color:blue;
+	opacity:1;
+
 }
 
 .last {
@@ -285,7 +318,10 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 .card:hover .img-top {
   display: inline;
 }
-
+.shadow{
+	border-radius:8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .indicator {
 	max-width:250px;
