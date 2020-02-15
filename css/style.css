@@ -271,6 +271,13 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
   display: inline-block;
 }
 
+.card-without {
+	width: 100%;
+	margin-bottom:2em;
+	position: relative;
+	display: inline-block;
+}
+
 .card:before,
 .card:after {
 	position: absolute;
