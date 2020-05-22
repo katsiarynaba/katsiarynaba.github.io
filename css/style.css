@@ -1,4 +1,18 @@
 
+@font-face {
+	font-family: 'Courier New';
+	src: url(CourierNewRegular.ttf) format('truetype');
+}
+
+* {
+	box-sizing: border-box;
+	margin:  0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: #222;
+}
+
+
 .video-container {
 	display:block;
 	width: 95%; /* 95%; */
@@ -19,7 +33,7 @@
 }
 
 ::selection {
-    color: white; 
+    color: white;
     background: blue;
 }
 
@@ -43,38 +57,23 @@ p.textbox {
 .page-link {
 	z-index:999;
 	color: blue;
-    font-family:'PT-Mono';
-    font-size:12px;
+    font-family:'Courier New';
+    font-size: 0.9rem;
     position:fixed;
     top:3%;
     right:3%;
 }
 
 .current-page {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
-/* End vera code */
-
-@font-face {
-	font-family: 'PT-Mono';
-	src: url(PTM55FT.ttf) format('truetype');
-}
-
-* {
-	box-sizing: border-box;
-	margin:  0;
-	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-}
 
 html, body { height: 100% }
 
 body {
-	font-family:'PT-Mono';
+	font-family:'Courier New';
 	margin:0 auto;
 	max-width:1280px;
 	overflow-x: hidden;
@@ -82,7 +81,7 @@ body {
 }
 
 a {
-	color:blue;	
+	color:blue;
 	text-decoration:none;
 }
 
@@ -98,9 +97,9 @@ img {
 
 
 p {
-	color:#a1a4ad;
-	font-family:'PT-Mono';
-	font-size:12px;
+	color: black;
+	font-family:'Courier New';
+	font-size:0.9rem;
 	line-height:20px;
 	margin-bottom:10px;
 }
@@ -113,8 +112,9 @@ p {
 
 h1 {
     color: blue;
-    font-family:'PT-Mono';
-    font-size:12px;
+    font-family:'Courier New';
+    font-size: 1rem;
+		text-decoration: none;
     position:absolute;
     top:3%;
     left:3%;
@@ -123,16 +123,16 @@ h1 {
 h2 {
     color: blue;
     font-weight:300;
-    font-family:'PT-Mono';
-    font-size:12px;
+    font-family:'Courier New';
+    font-size: 0.9rem;
     line-height:20px;
 }
 
 h3 {
     color: blue;
     font-weight:300;
-    font-family:'PT-Mono';
-    font-size:12px;
+    font-family:'Courier New';
+    font-size:0.9rem;
     line-height:20px;
 }
 
@@ -141,8 +141,8 @@ h4 {
     background:white;
     display:inline;
     font-weight:300;
-    font-family:'PT-Mono';
-    font-size:12px;
+    font-family:'Courier New';
+    font-size:0.9rem;
     line-height:20px;
 }
 
@@ -152,11 +152,11 @@ h4 {
 	margin-top:10px;
 }
 
-form { 
+form {
  	left:3%;
  	color:#a1a4ad;
  	bottom:3%;
-    position: fixed; 
+    position: fixed;
     max-width:250px;
     background: white;
     display: inline-block;
@@ -164,29 +164,29 @@ form {
 
 input { display: none; }
 
-input:checked + label { 
+input:checked + label {
     background: blue;
-    color: white; 
+    color: white;
 }
-label { 
-    cursor: pointer; 
+label {
+    cursor: pointer;
     color:blue;
-    display: block; 
-    font-size:12px;
-    text-align: left; 
+    display: block;
+    font-size:0.9rem;
+    text-align: left;
     margin-bottom: 10px;
 }
 
-label:hover {     
+label:hover {
     background: blue;
-    color:white; 
+    color:white;
 }
 
-article.menu { 
-    height: 0; 
-    overflow: hidden; 
-    -webkit-transition: height .25s linear, opacity .15s linear; 
-    position: relative; 
+article.menu {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .25s linear, opacity .15s linear;
+    position: relative;
     top: 5px;
     margin-bottom: 0;
     opacity: 0;
@@ -210,7 +210,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 }
 
 
-.portfolio-item { 
+.portfolio-item {
 	margin-top:10%;
 	margin-bottom:20%;
 }
@@ -336,20 +336,20 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 	display: inline-block;
 	margin-top:-10px;
 	left: 3%;
-	font-size:12px;
+	font-size: 0.9rem;
 	width: 22%;
 	text-decoration:none;
-	color:#a1a4ad;
+	color:#222;
 	transition: opacity 0.5s;
 }
 
 .indicator--passed, .indicator--upcoming {
   position: fixed;
 }
-.indicator--passed { 
+.indicator--passed {
   top: 0 !important;
 }
-.indicator--upcoming { 
+.indicator--upcoming {
   bottom: 0 !important;
 }
 .indicator--active {
@@ -404,7 +404,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 }
 #pageslide li a {
   display: block;
-  font-size: 12px;
+  font-size: 0.9rem;
   line-height: 3.5;
   padding: 0 20px;
   cursor: pointer;
@@ -414,7 +414,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 #pageslide .close {
 	display:inline-block;
 	text-align:center;
-	font-size:12px;
+	font-size:0.9rem;
 	margin-left:20px;
 	margin-top:20px;
 }
@@ -466,7 +466,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 
 @media (max-width: 700px) {
 
-	form { 
+	form {
 		visibility:hidden;
 }
 	.slideItWrapper {
@@ -509,7 +509,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 		width:90%;
 	}
 
-	.portfolio-item { 
+	.portfolio-item {
 		margin-top:50px;
 		margin-bottom:100px;
 	}
@@ -525,7 +525,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 }
 
 
-/* About Section by Patryk */ 
+/* About Section by Patryk */
 .about-container {
 	margin-top:8%;
 	width:calc(100% - 350px);
@@ -539,9 +539,8 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 
 .about-description {
 	margin-left:3%;
-	width:62%;
+	width:67%;
 	float:left;
-	padding-right:5%;
 }
 
 .face{
@@ -552,7 +551,7 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 	position: fixed;
 	bottom: 1em;
 	right:3%;
-	font-size:12px;
+	font-size: 0.9rem;
 }
 
 .round {
@@ -586,4 +585,3 @@ div > input:checked ~ article.menu { height: 80px; opacity: 1; }
 	}
 
 }
-
